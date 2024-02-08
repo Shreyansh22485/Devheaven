@@ -72,7 +72,7 @@ export const  calculateFitnessData=async(age, weight, height, gender)=> {
             activityCategory: activitySuggestions
         };
     } catch (error) {
-        console.error("Error fetching fitness data:", error);
-        throw new Error("Error fetching fitness data");
+        // console.error("Error fetching fitness data:", error);
+        // throw new Error("Error fetching fitness data");
     }
 }

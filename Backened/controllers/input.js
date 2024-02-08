@@ -19,6 +19,7 @@ export const input = async (req, res, next) => {
     console.log("Randomly chosen Pokémon:", randomPokemoindex);
     console.log(bmiresult);
   } catch (error) {
-    next(error);
+    // next(error);
+    console.log("no pokemon exist")
   }
 };
