@@ -1,33 +1,93 @@
-.home-container {
-    /* Styles for the home container */
-  }
 
-  body, html {
-    margin: 0; /* Reset default margin */
-    padding: 0; /* Reset default padding */
-    background-image: url('/images/image.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-  }
+.main {
+  width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  /* Other styles... */
+}
+#home {
+  background-image: url('/images/DALL·E 2024-02-09 00.37.02 - Create a vibrant and colorful HD quality landscape background that reflects the joyous and playful world of Pokémon. The image should be free of any w.webp');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Other styles... */
+}
 .flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center horizontally */
-    gap: 5px; /* Adjust the gap as needed */
-    position: fixed;
-    bottom: 10%;
-    left: 0;
-    right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  gap: 5px; /* Adjust the gap as needed */
+  position: fixed;
+  bottom: 10%;
+  left: 0;
+  right: 0;
 }
 
-.submit-button {
-    background-color: white;
-  }
-  .label-input-container .fb-label {
-    background-color: lightblue; /* Change this to your desired color */
-  }
+.dropdown {
+  background-color: white; 
+}
 
-  
+.dropdown::after {
+  color: black; 
+}
+
+/* .submit-button {
+  background-color: white;
+  left: 50;
+} */
+
+.gender-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pill-button {
+  background-color: rgb(140, 218, 244);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+   /* This makes the button pill-shaped */
+}
+.button-container {
+  width: 100%;
+  /* border: solid #ccc 5px ; */
+  display: flex;
+  justify-content: center;
+}
+
+.label-input-container .fb-label {
+  background-color: lightblue; /* Change this to your desired color */
+}
+
+/* Additional styles specific to your form layout */
+
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust spacing as needed */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+
+.form-input {
+  height: 30px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+/* You can add more styles for specific elements as needed */
