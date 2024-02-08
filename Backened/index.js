@@ -1,5 +1,6 @@
 import  express  from "express";
 import morgan from "morgan";
+import authRouter from "./routes/auth.route.js";
 
 
 
@@ -9,7 +10,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 
 
-
+app.use("/api/auth", authRouter);
 
 app.get("/",(req,res) =>{
     res.send("<h1>Welcomw to practice run</h1>")
