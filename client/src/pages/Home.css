@@ -1,0 +1,33 @@
+.home-container {
+    /* Styles for the home container */
+  }
+
+  body, html {
+    margin: 0; /* Reset default margin */
+    padding: 0; /* Reset default padding */
+    background-image: url('/images/DALL·E 2024-02-09 00.37.02 - Create a vibrant and colorful HD quality landscape background that reflects the joyous and playful world of Pokémon. The image should be free of any w.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+  }
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center horizontally */
+    gap: 5px; /* Adjust the gap as needed */
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+}
+
+.submit-button {
+    background-color: white;
+  }
+  .label-input-container .fb-label {
+    background-color: lightblue; /* Change this to your desired color */
+  }
+
+  
