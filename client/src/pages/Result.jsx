@@ -2,7 +2,7 @@ import React from 'react';
 import './Result.css';
 
 function Result() {
-  const pokemonImageSrc = 'image.png';
+  const pokemonImageSrc = '';
   const bmi = 'Your BMI';
   const bmiStatus = 'Your BMI Status';
   const exercisesSuggested = 'Exercises Suggested for You';
