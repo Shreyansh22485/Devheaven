@@ -21,11 +21,8 @@ npm i</br>
 npm run dev</br>
 //start the client server</br>
 
-We did not get the chance to integrate the backend and frontend due to the time constraints but for now the code is running and can be checked using the postman tool</br>
 
-In the postman tool select the POST option then enter the link : http://localhost:8080/api/auth/home</br>
-
-then select the body option then select raw and change the format to json the enter an input in which enter a json object including "height,weight,age,gender" (example given below) then click the send option.</br> 
+then select enter the following fields "height,weight,age,gender" (example given below) then click the send option.</br> 
 
 ```
 {
