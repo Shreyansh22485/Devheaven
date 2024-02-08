@@ -4,6 +4,7 @@ import { searchPokemonByHeightWeight } from "../helpers/apicall.js";
 // import { searchPokemonByHeightWeight } from './../helpers/apicall';
 
 export const input = async (req, res, next) => {
+    console.log(req.body)
   const { height, weight, age, gender } = req.body;
   if (!height || !weight) {
     next(errorHandler(400, "All fields are required"));

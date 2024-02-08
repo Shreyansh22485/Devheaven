@@ -25,10 +25,19 @@ function Home() {
     const weight = document.getElementById("weight").value;
     const age = document.getElementById("age").value;
     const gender = "male"// Assuming you have a gender field
-  
+    console.log(height, weight, age)
     try {
-      const response = await fetch('/api/auth/home', { height, weight, age, gender });
-      console.log(response.data);
+        let data =  { "height":height, "weight":weight, "age":age,"gender": gender };
+        const response = await fetch('http://localhost:8080/api/auth/home',{
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+          });
+          const da = await response.json();
+      console.log(da);
+      console.log(response);
       navigate('/result');
     } catch (error) {
       console.error(error);
